@@ -5,8 +5,10 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 appcache
 ground:db
+iron:router
+autopublish
+jquery
 materialize:materialize

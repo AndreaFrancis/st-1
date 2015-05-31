@@ -1,0 +1,22 @@
+<template name="layout">
+    <h1>Laboratorio</h1>
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul cla="right hide-on-med-and-down">
+                <li><a href="/users">Usuarios</a></li>
+                <li><a href="/labs">Laboratorios</a></li>
+                <li><a href="#">Tipos de análisis</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="/users">Usuarios</a></li>
+                <li><a href="/labs">Laboratorios</a></li>
+                <li><a href="#">Tipos de análisis</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main" class="row-fluid">
+        {{> yield}}
+    </div>
+</template>
+

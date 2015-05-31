@@ -1,0 +1,31 @@
+<template name="labs">
+    <div class="col s2 offset-s2">
+        <form class="new-lab">
+            <input type="text" name="text" placeholder="Name" class="text-input name" value="{{name}}"/>
+            <input type="text" name="text" placeholder="Descripción" class="text-input description" value="{{description}}"/>
+            <a class="btn-floating btn-large waves-effect waves-light red saveLab"><i class="mdi-content-add"></i></a>
+            <!--input type="submit" name="insert" value="insert"/-->
+        </form>
+    </div>
+    <table class="hoverable centered">
+        <thead>
+        <tr>
+            <th data-field="name">Nombre de laboratorio</th>
+            <th data-field="description">Descripcion</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {{#each labs}}
+            {{> labItem}}
+        {{/each}}
+        </tbody>
+    </table>
+</template>
+
+<template name="labItem">
+    <tr>
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+    </tr>
+</template>
